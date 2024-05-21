@@ -7,7 +7,7 @@ touch edited.txt
 
 for file in $(find . -type f -name "*.txt"); do
     if grep -q "$old" "$file"; then
-        sed -i "s/$old/$new/" "$file"
+        sed -i "s/$old/$new/g" "$file"
         echo "Замена '$old' на '$new' в файле '$file'" >> edited.txt
     fi
 done
