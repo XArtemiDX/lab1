@@ -6,8 +6,6 @@ static reFloatingPoint = ctRegex!`[0-9]+\.[0-9]+`;
 
 void main()
 {
-    // Replace anything that looks like a real
-    // number with the rounded equivalent.
     stdin
         .byLine
         .map!(l => l.replaceAll!(c => c.hit.round)
