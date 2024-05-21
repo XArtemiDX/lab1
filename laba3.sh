@@ -1,4 +1,4 @@
-echo "Лаб 3"
+
 #!/bin/bash
 
 read -p "Путь к директории с txt файлами: " directory
