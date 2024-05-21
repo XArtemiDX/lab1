@@ -8,7 +8,7 @@ touch edited.txt
 
 for file in "$directory"/*.txt; do
     if grep -q "$old_word" "$file"; then
-        sed -i "s/$old_word/$new_word/g" "$file"
+        sed -i "s/$old_word/$new_word/" "$file"
         echo "$file" >> edited.txt
     fi
 done
